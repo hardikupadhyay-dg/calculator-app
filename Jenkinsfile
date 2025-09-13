@@ -12,6 +12,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 bat 'docker build -t calculator-app .'
+                echo 'minor test'
             }
         }
 
